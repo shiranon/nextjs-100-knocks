@@ -25,12 +25,16 @@ export const Item = ({ className, appData, ...props }: CardProps) => {
     <Card className={cn('min-w-[300px]', className)} {...props}>
       <CardHeader>
         <CardTitle>{appData.title}</CardTitle>
-        <CardDescription>{appData.description}</CardDescription>
+        <CardDescription>
+          <p>{appData.description}</p>
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <Image src={appData.image ? appData.image : None} alt={appData.title} />
       </CardContent>
-      <CardFooter>{appData.footer}</CardFooter>
+      <CardFooter>
+        <p>{appData.footer}</p>
+      </CardFooter>
     </Card>
   )
 }

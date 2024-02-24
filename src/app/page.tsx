@@ -1,13 +1,17 @@
-import { Item } from '@/components/elements/card/Item'
+import clsx from 'clsx'
+
+import { AppCard } from '@/components/elements/card/AppCard'
 import { appData } from '@/constants/appData'
+
 export default function Home() {
   return (
-    <div className="pt-20">
-      <div className="flex items-center justify-center">
-        {appData.map((item) => {
-          return <Item appData={item} key={item.title} />
-        })}
-      </div>
+    <div
+      className={clsx('grid justify-center gap-4')}
+      style={{ gridTemplateColumns: 'repeat(auto-fit, 300px)' }}
+    >
+      {appData.map((item) => {
+        return <AppCard appData={item} key={item.id} className="select-none" />
+      })}
     </div>
   )
 }

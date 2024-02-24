@@ -1,6 +1,6 @@
 export const siteConfig = {
-  title: 'your site title',
-  description: 'your site description',
-  url: 'your site url',
-  authors: 'your name',
+  title: 'React 100本ノック',
+  description: '自習用',
+  url: 'https://nextjs-100-knocks.vercel.app/',
+  authors: 'shiranon',
 }
