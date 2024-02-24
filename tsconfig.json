@@ -30,6 +30,7 @@
       "@/lib/*": ["./src/lib/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/public/*": ["public/*"],
+      "@/features/*": ["./src/features/*"],
     },
   },
   "include": [
