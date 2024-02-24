@@ -61,17 +61,7 @@ const nextConfig = {
   },
 }
 
-const ContentSecurityPolicy = `
-    default-src 'self' vercel.live;
-    connect-src *;
-    frame-src 'self' vercel.live;
-`
-
 const securityHeaders = [
-  {
-    key: 'Content-Security-Policy',
-    value: ContentSecurityPolicy.replace(/\n/g, ''),
-  },
   {
     key: 'Referrer-Policy',
     value: 'origin-when-cross-origin',
