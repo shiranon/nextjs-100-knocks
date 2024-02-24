@@ -111,11 +111,10 @@ export const MazeGenerator = () => {
       )
     )
   }
-  const gridCol = `grid-cols-${width + 1}`
   return (
     <>
       <div>
-        <div className={cn('grid', gridCol)}>
+        <div className="grid grid-cols-5">
           {maze.map((row, rowIndex) => {
             return (
               <React.Fragment key={`row-${rowIndex}`}>
