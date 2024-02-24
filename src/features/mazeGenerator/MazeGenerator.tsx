@@ -3,11 +3,11 @@
 import React, { useState } from 'react'
 
 import { Button } from '@/components/ui/button'
-import { cn, rand } from '@/lib/utils'
+import { rand } from '@/lib/utils'
 
 export const MazeGenerator = () => {
-  const height = 4
-  const width = 4
+  const height = 8
+  const width = 8
 
   const isBorder = (row: number, col: number) => {
     return row === 0 || col === 0 || row === height || col === width
@@ -114,7 +114,7 @@ export const MazeGenerator = () => {
   return (
     <>
       <div>
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-9">
           {maze.map((row, rowIndex) => {
             return (
               <React.Fragment key={`row-${rowIndex}`}>
