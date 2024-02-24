@@ -98,7 +98,6 @@ export const MazeGenerator = () => {
 
   const renderCell = (col: number, rowIndex: number, colIndex: number) => {
     const key = `cell-${rowIndex}-${colIndex}`
-    console.log(key)
     const emojiArray = ['👑', '🕯', '⚔']
     const cellStyles: { [key: number]: JSX.Element } = {
       0: <div key={key} className="size-8 bg-white"></div>,
