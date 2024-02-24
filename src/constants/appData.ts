@@ -34,6 +34,7 @@ export const appData = [
     description: '迷路自動生成',
     footer: '棒倒し法',
     id: '101',
+    image: null,
     component: MazeGenerator,
   },
 ]
