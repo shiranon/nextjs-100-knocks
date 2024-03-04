@@ -30,11 +30,11 @@ export const appData = [
     component: Todo,
   },
   {
-    title: '004 Maze Generator',
+    title: '104 Maze Generator',
     description: '迷路自動生成',
     footer: '棒倒し法',
     id: '101',
-    image: null,
+    image: Images[Images.length - 1],
     component: MazeGenerator,
   },
 ]
